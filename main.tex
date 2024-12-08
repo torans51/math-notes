@@ -1,15 +1,63 @@
-
 \documentclass{article}
+\usepackage[a4paper, top=20mm, bottom=20mm]{geometry}
+\usepackage{amssymb}
+\usepackage{amssymb}
+\usepackage{amsmath}
 \usepackage{mathtools}
 \usepackage{graphicx}
 
 \begin{document}
 
-  \section{Retta}
+  \section{Punti e Retta}
 
-  \subsection*{Forma implicita}
+  \subsection*{Distanza punto-punto}
+  \begin{equation}
+    d = \sqrt{(x_1 - x_2)^2 + (y_1 + y_2)^2}
+  \end{equation}
+
+  \subsection*{Punto medio}
+  \begin{equation}
+    P_M = \left(\frac{x_1 + x_2}{2}; \frac{y_1 + y_2}{2}\right)
+  \end{equation}
+
+  \subsection*{Retta - forma implicita}
   \begin{equation}
     ax+by+c = 0
   \end{equation}
 
+  \subsection*{Retta - forma esplicita}
+  \begin{equation}
+    y = mx + q
+  \end{equation} 
+  Descrive tutte le rette tranne quelle parallele all'asse $y$. Il parametro $m$ è il coefficiente angolare e il parametro $q$ è il termine noto.
+
+  \subsection*{Distanza punto-retta}
+  Si consideri il punto $P_1=(x_1;y_1)$ e la retta $ax+by+c=0$
+  \begin{equation}
+    d = \frac{|ax_1 +by_1 + c|}{\sqrt{a^2+b^2}}
+  \end{equation}
+
+  \subsection*{Retta passante per 2 punti}
+  \begin{equation}
+    \frac{y-y_1}{y_2-y_1} = \frac{x-x_1}{x_2-x_1}
+    \qquad\text{oppure}\qquad
+    y = \frac{x_2-x_1}{y_2-y_1}(x-x_1) + y_1
+  \end{equation}
+  Questa equazione vale solo nei casi in cui $y_2-y_1 \ne 0$ e $x_2-x_1 \ne 0$. In questi 2 casi particolari abbiamo semplicemente 2 rette particolari: la prima parallela all'asse $x$ mentre la seconda parallela all'asse $y$.
+
+  \subsection*{Fascio di rette per un punto}
+  \begin{equation}
+    y-y_1 = m(x-x_1) \qquad\cup\qquad x = x_1
+  \end{equation}
+  Al variare di $m \in \mathbb{R}$ descrive tutte le rette passanti per il punto eccetto quella parallela all'asse $y$.
+
+  \subsection*{Fasio di rette generato da 2 rette}
+  Date le rette $a_1x+b_1y+c_1 = 0$ e $a_2x+b_2y+c_2 = 0$
+  \begin{equation}
+    a_1x+b_1y+c_1 + k (a_2x+b_2y+c_2) = 0 \qquad\cup\qquad a_2x+b_2y+c_2 = 0
+  \end{equation}
+  Al variare di $k \in \mathbb{R}$ descrive tutte le rette del fascio eccetto la retta $a_2x+b_2y+c_2 = 0$.
+
+  \newpage
+  \section{Circonferenza}
 \end{document}
