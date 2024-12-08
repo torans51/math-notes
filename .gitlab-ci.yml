@@ -5,6 +5,8 @@ stages:
 
 build-job:
   stage: build
+  only:
+    - tags
   script:
     - pdflatex main.tex
   after_script:
