@@ -60,4 +60,37 @@
 
   \newpage
   \section{Circonferenza}
+  \subsection*{Circonferenza - equazione con centro e raggio}
+  \begin{equation}
+    (x-x_c)^2+(y-y_c)^2 = r^2
+  \end{equation}
+
+  \subsection*{Circonferenza - forma implicita}
+  \begin{equation}
+    x^2+y^2+ax+by+c = 0
+  \end{equation}
+  I parametri $a, b, c$ sono legati alle coordinate del centro e al raggio in questo modo: 
+  \begin{align*}
+    x_c &= -\frac{a}{2}\\
+    y_c &= -\frac{b}{2}\\
+    r^2 &= \frac{a^2}{2} + \frac{b^2}{2} - c^2 \\
+  \end{align*}
+  Affinché l'equazione descriva una circonferenza e quindi $\frac{a^2}{2} + \frac{b^2}{2} - c^2 > 0$.
+
+  \subsection*{Asse radiale fra 2 circonferenze}
+  Date le circonferenze $x^2+y^2+a_1x+b_1y+c_1 = 0$ e $x^2+y^2+a_2x+b_2y+c_2 = 0$ 
+  \begin{equation}
+    (a_1-a_2)x+(b_1-b_2)y+c_1-c_2 = 0
+  \end{equation}
+  L'asse radiale esiste solo se le 2 circonferenze non sono concentriche.
+
+  \subsection*{Fascio di circonferenze generato da 2 circonferenze}
+  \begin{equation}
+    x^2+y^2+a_1x+b_1y+c_1 +k (x^2+y^2+a_2x+b_2y+c_2) = 0
+  \end{equation}
+
+  Al variare di $k \in \mathbb{R}$ descrive tutte le circonferenze del fascio eccetto quella che viene moltiplicata per il parametro $k$ $x^2+y^2+a_2x+b_2y+c_2$.
+
+  L'asse radiale è una particolare circonferenza del fascio e si ottiene per $k=-1$.
+
 \end{document}
