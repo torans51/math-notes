@@ -2,8 +2,9 @@ name: Compile Latex and Release PDF
 
 
 on:
-  tags
-    
+  push:
+    tags
+
 jobs:
   build_latex:
     runs-on: ubuntu-latest
