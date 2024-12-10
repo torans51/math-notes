@@ -3,7 +3,8 @@ name: Compile Latex and Release PDF
 
 on:
   push:
-    tags
+    tags:
+      - v*
 
 jobs:
   build_latex:
