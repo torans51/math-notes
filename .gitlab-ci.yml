@@ -26,7 +26,7 @@ release_job:
   release:
     tag_name: '$CI_COMMIT_TAG'
     description: '$CI_COMMIT_TAG'
-  assets:
-    links:
-      - name: 'main.pdf'
-        url: 'https://gitlab.com/torans51/math-notes/-/jobs/$JOB_ID/artifacts/download'
+    assets:
+      links:
+        - name: 'main.pdf'
+          url: 'https://gitlab.com/torans51/math-notes/-/jobs/$JOB_ID/artifacts/download'
