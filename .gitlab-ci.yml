@@ -11,10 +11,13 @@ build-job:
   script:
     - pdflatex main.tex
   after_script:
+    - echo "JOB_ID=$CI_JOB_ID" >> job.env
     - cat main.log
   artifacts:
     paths:
       - main.pdf
+    reports:
+      dotenv: job.env
 
 release_job:
   stage: release
@@ -29,4 +32,4 @@ release_job:
     assets:
       links:
         - name: 'main.pdf'
-          url : "$CI_JOB_URL/artifacts/download"
+          url: "https://gitlab.com/$CI_PROJECT_PATH/-/jobs/$JOB_ID/artifacts/file/main.pdf"
