@@ -29,4 +29,4 @@ release_job:
     assets:
       links:
         - name: 'main.pdf'
-          url: 'https://gitlab.com/torans51/math-notes/-/jobs/$JOB_ID/artifacts/download'
+          url: "https://gitlab.com/torans51/math-notes/-/jobs/$JOB_ID/artifacts/download"
