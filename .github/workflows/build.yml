@@ -2,10 +2,7 @@ name: Compile Latex and Release PDF
 
 
 on:
-  push
-  # push:
-  #   tags:
-  #     - v**
+  tags
     
 jobs:
   build_latex:
