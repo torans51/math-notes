@@ -89,8 +89,72 @@
     x^2+y^2+a_1x+b_1y+c_1 +k (x^2+y^2+a_2x+b_2y+c_2) = 0
   \end{equation}
 
-  Al variare di $k \in \mathbb{R}$ descrive tutte le circonferenze del fascio eccetto quella che viene moltiplicata per il parametro $k$ $x^2+y^2+a_2x+b_2y+c_2$.
+  Al variare di $k \in \mathbb{R}$ descrive tutte le circonferenze del fascio eccetto quella che viene moltiplicata per il parametro $k$: $x^2+y^2+a_2x+b_2y+c_2 = 0$.
 
   L'asse radiale è una particolare circonferenza del fascio e si ottiene per $k=-1$.
+
+  \newpage
+  \section{Parabola}
+  \subsection*{Parabola - equazione e caratteristiche principali}
+  \begin{minipage}[t]{.45\textwidth}
+    Parabola con asse di simmetria parallelo all'asse $y$.
+    \begin{align*}
+      & \text{\textit{equazione:}} \qquad
+      y = ax^2 + bx + c \\
+      & \text{\textit{asse di simmetria:}} \qquad
+      x = -\frac{b}{2a} \\
+      & \text{\textit{vertice:}} \qquad
+      V = \left(-\frac{b}{2a}; -\frac{\Delta}{4a}\right) \\
+      & \text{\textit{fuoco:}} \qquad
+      F = \left(-\frac{b}{2a}; \frac{1}{4a} -\frac{\Delta}{4a}\right) \\
+      & \text{\textit{direttrice:}} \qquad
+      y = -\frac{1}{4a} -\frac{\Delta}{4a}
+    \end{align*}
+  \end{minipage}
+  \hfill
+  \begin{minipage}[t]{.45\textwidth}
+    Parabola con asse di simmetria parallelo all'asse $x$.
+    \begin{align*}
+      & \text{\textit{equazione:}} \qquad
+      x = ay^2 + bx + c \\
+      & \text{\textit{asse di simmetria:}} \qquad
+      y = -\frac{b}{2a} \\
+      & \text{\textit{vertice:}} \qquad
+      V = \left(-\frac{\Delta}{4a}; -\frac{b}{2a}\right) \\
+      & \text{\textit{fuoco:}} \qquad
+      F = \left(\frac{1}{4a} -\frac{\Delta}{4a}; -\frac{b}{2a}\right) \\
+      & \text{\textit{direttrice:}} \qquad
+      x = -\frac{1}{4a} -\frac{\Delta}{4a}
+    \end{align*}
+  \end{minipage}
+
+  \subsection*{Fascio di parabole generato da 2 parabole}
+  \begin{equation}
+    y -a_1x^2 -b_1x -c_1 +k(y -a_2x^2 -b_2x -c_2) = 0
+  \end{equation}
+
+  Al variare di $k \in \mathbb{R}$ descrive tutte le parabole del fascio eccetto quella che viene moltiplicata per il parametro $k$: $y - a_2x^2 -b_2x -c_2 = 0$.
+
+  Scegliendo $k$ in modo tale che i termini in $x^2$ si annullino si ottiene l'asse del fascio.
+
+  Scegliendo $k=-1$ si ottiene un'equazione di secondo grado in $x$ che permette di ricavare le ascisse dei punti base. 
+  \begin{itemize}
+    \item 2 soluzioni distinte: le parabole si intersecano sempre nei 2 punti base e l'asse del fascio passa per i 2 punti base
+    \item 2 soluzioni coincidenti: le parabole sono tangenti nel punto base e l'asse del fascio è la retta tangente a tutte le parabole per il punto base
+    \item 1 soluzione: le parabole si intersecano in un punto e gli assi di simmetria sono tutti paralleli fra loro.
+    \item nessuna soluzione: le parabole non si intersecano fra loro
+  \end{itemize}
+
+  \subsection*{Fascio di parabole generato da 2 punti}
+  Dati i punti $P_1=(x_1; y_1)$ e $P_2=(x_2; y_2)$ e $y=mx+q$ la retta passante per i punti $P_1$ e $P_2$
+  \begin{equation}
+    y = mx +q +k(x-x_1)(x-x_2)
+  \end{equation}
+
+  \subsection*{Fascio di parabole generato da una retta e un punto sulla retta}
+  Data la retta $y=mx+q$ e un punto $P_1=(x_1;y_1)$ appartenente ad essa
+  \begin{equation}
+    y=mx+q + k(x-x_1)^2
+  \end{equation}
 
 \end{document}
