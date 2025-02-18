@@ -7,7 +7,6 @@
 \usepackage{graphicx}
 
 \begin{document}
-
   \section{Punti e Retta}
 
   \subsection*{Distanza punto-punto}
@@ -60,6 +59,7 @@
 
   \newpage
   \section{Circonferenza}
+
   \subsection*{Circonferenza - equazione con centro e raggio}
   \begin{equation}
     (x-x_c)^2+(y-y_c)^2 = r^2
@@ -95,10 +95,11 @@
 
   \newpage
   \section{Parabola}
+
   \subsection*{Parabola - equazione e caratteristiche principali}
   \begin{minipage}[t]{.45\textwidth}
     Parabola con asse di simmetria parallelo all'asse $y$.
-    \begin{align*}
+    \begin{align}
       & \text{\textit{equazione:}} \qquad
       y = ax^2 + bx + c \\
       & \text{\textit{asse di simmetria:}} \qquad
@@ -109,12 +110,12 @@
       F = \left(-\frac{b}{2a}; \frac{1}{4a} -\frac{\Delta}{4a}\right) \\
       & \text{\textit{direttrice:}} \qquad
       y = -\frac{1}{4a} -\frac{\Delta}{4a}
-    \end{align*}
+    \end{align}
   \end{minipage}
   \hfill
   \begin{minipage}[t]{.45\textwidth}
     Parabola con asse di simmetria parallelo all'asse $x$.
-    \begin{align*}
+    \begin{align}
       & \text{\textit{equazione:}} \qquad
       x = ay^2 + bx + c \\
       & \text{\textit{asse di simmetria:}} \qquad
@@ -125,7 +126,7 @@
       F = \left(\frac{1}{4a} -\frac{\Delta}{4a}; -\frac{b}{2a}\right) \\
       & \text{\textit{direttrice:}} \qquad
       x = -\frac{1}{4a} -\frac{\Delta}{4a}
-    \end{align*}
+    \end{align}
   \end{minipage}
 
   \subsection*{Fascio di parabole generato da 2 parabole}
@@ -155,6 +156,48 @@
   Data la retta $y=mx+q$ e un punto $P_1=(x_1;y_1)$ appartenente ad essa
   \begin{equation}
     y=mx+q + k(x-x_1)^2
+  \end{equation}
+
+  \newpage
+  \section{Ellisse}
+
+  \subsection*{Ellisse - equazione e caratteristiche principali}
+  \begin{minipage}[t]{.45\textwidth}
+    Ellisse con centro l'origine e con i fuochi sull'asse $x$.
+    \begin{align}
+      & \text{\textit{equazione:}} \qquad
+      \frac{x^2}{a^2} + \frac{y^2}{b^2} = 1 \\
+      & \text{\textit{semiasse maggiore:}} \quad a \\
+      & \text{\textit{semiasse minore:}} \quad b \\
+      & \text{\textit{posizione dei fuochi:}} \nonumber \\
+      & \quad F_1 = (-c, 0) \quad F_2 = (c; 0) \\
+      & \text{\textit{relazione fuochi e semiassi:}} \nonumber \\
+      & \quad a^2 = b^2 + c^2 \\
+      & \text{\textit{eccentricità:}} \nonumber \\
+      & \quad e = \frac{c}{a} = \sqrt{1-\frac{b^2}{a^2}}
+    \end{align}
+  \end{minipage}
+  \hfill
+  \begin{minipage}[t]{.45\textwidth}
+    Ellisse con centro l'origine e con i fuochi sull'asse $y$.
+    \begin{align}
+      & \text{\textit{equazione:}} \qquad
+      \frac{x^2}{a^2} + \frac{y^2}{b^2} = 1 \\
+      & \text{\textit{semiasse maggiore:}} \quad b \\
+      & \text{\textit{semiasse minore:}} \quad a \\
+      & \text{\textit{posizione dei fuochi:}} \nonumber \\
+      & \quad F_1 = (0, -c) \quad F_2 = (0; c) \\
+      & \text{\textit{relazione fuochi e semiassi:}} \nonumber \\
+      & \quad b^2 = a^2 + c^2 \\
+      & \text{\textit{eccentricità:}} \nonumber \\
+      & \quad e = \frac{c}{b} = \sqrt{1-\frac{a^2}{b^2}}
+    \end{align}
+  \end{minipage}
+
+  \subsection*{Ellisse con centro traslato}
+  Ellisse con fuochi sull'asse $x$ o asse $y$ e centro traslato
+  \begin{equation}
+    \frac{(x-x_c)^2}{a^2} + \frac{(y-y_c)^2}{b^2} = 1 \\
   \end{equation}
 
 \end{document}
