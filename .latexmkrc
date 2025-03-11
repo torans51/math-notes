@@ -1,2 +1,2 @@
 # Set the PDF viewer
-$pdf_previewer = 'librewolf';
+$pdf_previewer = 'okular';
