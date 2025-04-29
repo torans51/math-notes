@@ -6,6 +6,12 @@
 \usepackage{mathtools}
 \usepackage{graphicx}
 
+\let\svthefootnote\thefootnote
+\newcommand\blankfootnote[1]{%
+  \let\thefootnote\relax\footnotetext{#1}%
+  \let\thefootnote\svthefootnote%
+}
+
 \begin{document}
   \section{Punti e Retta}
 
@@ -261,4 +267,106 @@
     (x-x_c)(y-y_c) = \pm k \qquad \text{\textit{k numero}}
   \end{equation}
 
+  \newpage
+  \section{Trigonometria e goniometria}
+  \blankfootnote{Per le formule con denominatori dipendenti da funzioni trigonometriche o con la tangente bisogna imporre tutte le condizioni di esistenza sugli angoli.}
+
+  \subsection*{Relazioni fondamentali e angoli principali}
+  \begin{equation*}
+    \sin^2 \alpha + \cos^2 \alpha = 1 \quad \forall \alpha \in \mathbb{R}
+    \qquad
+    \tan\alpha = \frac{\sin\alpha}{\cos\alpha}
+  \end{equation*}
+  \renewcommand{\arraystretch}{1.5}
+  \begin{center}
+    \begin{tabular}{ | c | c | c | c | c | }
+      \hline
+      deg & rad & $\sin \alpha$ & $\cos\alpha$ & $\tan\alpha$ \\
+      \hline
+      $0^o$ & $0$ & $0$ & $1$ & $0$ \\
+      $30^o$ & $\frac{\pi}{6}$ & $\frac{1}{2}$ & $\frac{\sqrt{3}}{2}$ & $\frac{\sqrt{3}}{3}$ \\
+      $45^o$ & $\frac{\pi}{4}$ & $\frac{\sqrt{2}}{2}$ & $\frac{\sqrt{2}}{2}$ & $1$ \\
+      $60^o$ & $\frac{\pi}{3}$ & $\frac{\sqrt{3}}{2}$ & $\frac{1}{2}$ & $\sqrt{3}$ \\
+      $90^o$ & $\frac{\pi}{2}$ & $1$ & $0$ & $\text{not def}$ \\
+      \hline
+    \end{tabular}
+  \end{center}
+  \renewcommand{\arraystretch}{1}
+
+  \subsection*{Formule di addizione/sottrazione}
+  \begin{equation}
+    \sin(\alpha\pm\beta) = \sin\alpha \, \cos\beta \pm \cos\alpha \, \sin\beta
+  \end{equation}
+  \begin{equation}
+    \cos(\alpha\pm\beta) = \cos\alpha \, \cos\beta \mp \sin\alpha \, \sin\beta
+  \end{equation}
+  \begin{equation}
+    \tan(\alpha\pm\beta) = \frac{\tan\alpha \pm \\tan\beta}{1 \mp \tan\alpha \, \tan\beta}
+  \end{equation}
+
+  \subsection*{Formule di duplicazione}
+  \begin{equation}
+    \sin(2\alpha) = 2 \sin\alpha \, \cos\alpha
+  \end{equation}
+  \begin{equation}
+    \cos(2\alpha) = \cos^2 \alpha - \sin^2 \alpha
+  \end{equation}
+  \begin{equation}
+    \tan(2\alpha) = \frac{2\tan\alpha}{1-\tan^2\alpha}
+  \end{equation}
+
+  \subsection*{Formule di bisezione}
+  \begin{equation}
+    \sin\frac{\alpha}{2} = \pm \sqrt{\frac{1-\cos\alpha}{2}}
+    \qquad
+    \cos\frac{\alpha}{2} = \pm \sqrt{\frac{1+\cos\alpha}{2}}
+    \qquad
+    \tan\frac{\alpha}{2} = \pm \sqrt{\frac{1-\cos\alpha}{1+\cos\alpha}}
+  \end{equation}
+  % \begin{equation}
+  %   \sin\frac{\alpha}{2} = \pm \sqrt{\frac{1-\cos\alpha}{2}}
+  % \end{equation}
+  % \begin{equation}
+  %   \cos\frac{\alpha}{2} = \pm \sqrt{\frac{1+\cos\alpha}{2}}
+  % \end{equation}
+  % \begin{equation}
+  %   \tan\frac{\alpha}{2} = \pm \sqrt{\frac{1-\cos\alpha}{1+\cos\alpha}}
+  % \end{equation}
+
+  \subsection*{Formule di parametriche}
+  \begin{equation}
+    \sin\alpha = \frac{2\tan\frac{\alpha}{2}}{1+\tan^2 \frac{\alpha}{2}}
+    \qquad
+    \cos\alpha = \frac{1-\tan^2 \frac{\alpha}{2}}{1+\tan^2 \frac{\alpha}{2}}
+    \qquad
+    \tan\alpha = \frac{2\tan\frac{\alpha}{2}}{1-\tan^2 \frac{\alpha}{2}}
+  \end{equation}
+  % \begin{equation}
+  %   \sin\alpha = \frac{2\tan\frac{\alpha}{2}}{1+\tan^2 \frac{\alpha}{2}}
+  % \end{equation}
+  % \begin{equation}
+  %   \cos\alpha = \frac{1-\tan^2 \frac{\alpha}{2}}{1+\tan^2 \frac{\alpha}{2}}
+  % \end{equation}
+
+  \subsection*{Formule di prostaferesi}
+  \begin{equation}
+    \sin\alpha \pm \sin\beta = 2 \sin\frac{\alpha \pm \beta}{2} \cos\frac{\alpha \mp \beta}{2}
+  \end{equation}
+  \begin{equation}
+    \cos\alpha + \cos\beta = 2 \cos\frac{\alpha + \beta}{2} \cos\frac{\alpha - \beta}{2}
+  \end{equation}
+  \begin{equation}
+    \cos\alpha - \cos\beta = -2 \sin\frac{\alpha + \beta}{2} \sin\frac{\alpha - \beta}{2}
+  \end{equation}
+
+  \subsection*{Formule di Werner}
+  \begin{equation}
+    \sin\alpha \, \sin\beta = \frac{1}{2} [ \cos(\alpha - \beta) - \cos(\alpha + \beta)]
+  \end{equation}
+  \begin{equation}
+    \cos\alpha \, \cos\beta = \frac{1}{2} [\cos(\alpha + \beta) + \cos(\alpha - \beta)]
+  \end{equation}
+  \begin{equation}
+    \sin\alpha \, \cos\beta = \frac{1}{2} [\sin(\alpha + \beta) + \sin(\alpha - \beta)]
+  \end{equation}
 \end{document}
